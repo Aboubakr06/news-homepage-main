@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://www.frontendmentor.io/solutions/)
-- Live Site URL: (https://.netlify.app/)
+- Live Site URL: (https://tranquil-scone-996ff5.netlify.app/)
 
 ## My process
 
