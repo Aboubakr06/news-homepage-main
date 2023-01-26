@@ -680,6 +680,11 @@ video {
   line-height: 1.5rem;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .font-normal {
   font-weight: 400;
 }
