@@ -16,14 +16,16 @@
   <title>Frontend Mentor | News homepage</title>
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="debug.css">-->
 </head>
 
-<body class="font-Inter font-normal text-dark-blue text-[0.938rem] bg-off-white max-lg:relative">
-  <header class="flex items-center text-lg justify-between px-4 py-8">
+<body class="grid font-Inter font-normal text-dark-blue text-[0.938rem] bg-off-white max-lg:relative">
+  <header class="flex items-center text-lg justify-between px-4 py-8 lg:px-32 lg:pt-20 lg:pb-8">
     <img src="assets/images/logo.svg" alt="Logo">
     <a class="menu-btn lg:hidden"><img src="assets/images/icon-menu.svg" alt="Menu"></a>
     <a class="open-menu hidden absolute z-40 right-4 top-8"><img src="assets/images/icon-menu-close.svg" alt="Menu"></a>
-    <nav class="menu max-lg:hidden max-lg:absolute flex items-center gap-8 max-lg:flex-col max-lg:bg-off-white max-lg:pt-32 max-lg:items-start max-lg:px-4 max-lg:py-8 max-lg:text-bold-blue max-lg:top-0 max-lg:right-0 max-lg:w-8/12 max-lg:h-full">
+    <nav
+      class="menu max-lg:hidden max-lg:absolute flex items-center gap-8 max-lg:flex-col max-lg:bg-off-white max-lg:pt-32 max-lg:items-start max-lg:px-4 max-lg:py-8 max-lg:text-bold-blue max-lg:top-0 max-lg:right-0 max-lg:w-8/12 max-lg:h-full">
       <a class="hover:text-soft-red" href="#">Home</a>
       <a class="hover:text-soft-red" href="#">New</a>
       <a class="hover:text-soft-red" href="#">Popular</a>
@@ -31,23 +33,25 @@
       <a class="hover:text-soft-red" href="#">Categories</a>
     </nav>
   </header>
-  <main class="grid gap-12 pt-4 pb-16 px-4">
-    <section class="grid gap-4">
+  <main class="grid gap-12 pt-4 pb-16 px-4 lg:px-32 lg:pt-8 lg:gap-8 lg:grid-cols-3 lg:grid-rows-2">
+    <section class="grid gap-4 lg:col-start-1 lg:col-end-3">
       <picture>
         <source media="(min-width:1024px)" srcset="assets/images/image-web-3-desktop.jpg">
         <img class="min-w-full" src="assets/images/image-web-3-mobile.jpg" alt="" aria-hidden="true">
       </picture>
+      <div class="grid gap-4 lg:items-center lg:grid-cols-2">
+        <h1 class="text-bold-blue text-4xl font-extrabold lg:text-5xl">The Bright Future of Web 3.0?</h1>
+        <div class="grid gap-4">
+          <p>We dive into the next evolution of the web that claims to
+            put the power of the platforms back into the hands of
+            the people. But is it really fulfilling its promise?</p>
 
-      <h1 class="text-bold-blue text-4xl font-extrabold">The Bright Future of Web 3.0?</h1>
-      <div class="grid gap-4">
-        <p>We dive into the next evolution of the web that claims to
-          put the power of the platforms back into the hands of
-          the people. But is it really fulfilling its promise?</p>
-
-        <a class="flex items-center justify-center p-4 bg-soft-red text-off-white hover:bg-bold-blue w-1/2 uppercase tracking-[0.2em] font-bold" href="#">Read more</a>
+          <a class="flex items-center justify-center p-4 bg-soft-red text-off-white hover:bg-bold-blue w-1/2 uppercase tracking-[0.2em] font-bold"
+            href="#">Read more</a>
+        </div>
       </div>
     </section>
-    <aside class="grid gap-4 bg-bold-blue px-4 py-8">
+    <aside class="grid gap-4 bg-bold-blue px-4 py-8 lg:col-start-3 lg:row-start-1 lg:row-end-2">
       <h2 class="text-soft-orange text-4xl font-extrabold mb-4">New</h2>
 
       <a class="text-lg text-off-white font-extrabold hover:text-soft-orange" href="#">Hydrogen VS Electric Cars</a>
@@ -62,37 +66,37 @@
       <p class="text-blue">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
     </aside>
 
-    <section class="grid gap-6">
+    <section class="grid gap-6 lg:grid-cols-3 lg:col-span-full lg:items-center lg:place-self-start lg:mt-4 lg:gap-10">
       <div class="flex items-center gap-4">
         <img class="w-24" src="assets/images/image-retro-pcs.jpg" alt="" aria-hidden="true">
         <div class="grid gap-2">
           <h2 class="text-3xl text-blue font-extrabold">01</h2>
-            <a class="text-base text-bold-blue font-extrabold hover:text-soft-red" href="#">Reviving Retro PCs</a>
+          <a class="text-base text-bold-blue font-extrabold hover:text-soft-red" href="#">Reviving Retro PCs</a>
           <p>What happens when old PCs are given modern upgrades?</p>
 
         </div>
       </div>
 
       <div class="flex items-center gap-4">
-          <img class="w-24" src="assets/images/image-top-laptops.jpg" alt="" aria-hidden="true">
-          <div class="grid gap-2">
+        <img class="w-24" src="assets/images/image-top-laptops.jpg" alt="" aria-hidden="true">
+        <div class="grid gap-2">
 
-            <h2 class="text-3xl text-blue font-extrabold">02</h2>
-            <a class="text-base text-bold-blue font-extrabold hover:text-soft-red" href="#">Top 10 Laptops of 2022</a>
-            <p>Our best picks for various needs and budgets.</p>
+          <h2 class="text-3xl text-blue font-extrabold">02</h2>
+          <a class="text-base text-bold-blue font-extrabold hover:text-soft-red" href="#">Top 10 Laptops of 2022</a>
+          <p>Our best picks for various needs and budgets.</p>
 
-          </div>
         </div>
+      </div>
 
-        <div class="flex items-center gap-4">
-            <img class="w-24" src="assets/images/image-gaming-growth.jpg" alt="" aria-hidden="true">
-            <div class="grid gap-2">
+      <div class="flex items-center gap-4">
+        <img class="w-24" src="assets/images/image-gaming-growth.jpg" alt="" aria-hidden="true">
+        <div class="grid gap-2">
 
-              <h2 class="text-3xl text-blue font-extrabold">03</h2>
-                <a class="text-base text-bold-blue font-extrabold hover:text-soft-red" href="#">The Growth of Gaming</a>
-              <p>How the pandemic has sparked fresh opportunities.</p>
-            </div>
-          </div>
+          <h2 class="text-3xl text-blue font-extrabold">03</h2>
+          <a class="text-base text-bold-blue font-extrabold hover:text-soft-red" href="#">The Growth of Gaming</a>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
     </section>
   </main>
   <script src="script.js"></script>
