@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://www.frontendmentor.io/solutions/)
+- Solution URL: (https://www.frontendmentor.io/solutions/news-homepage-with-tailwindcss-ecufWEf5JN)
 - Live Site URL: (https://tranquil-scone-996ff5.netlify.app/)
 
 ## My process
